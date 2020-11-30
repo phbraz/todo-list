@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todoListDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect("mongodb+srv://phbraz:Patrycja0304@cluster0.95eou.mongodb.net/todoListDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 //item schema
 const itemSchema = new mongoose.Schema(
